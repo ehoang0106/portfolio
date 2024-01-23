@@ -1,3 +1,6 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 
@@ -12,11 +15,13 @@
 
 .avatar > img {
     border-radius: 50%;
-    height: 250px;
+    height: 350px;
+    width: 390px;
     margin-bottom: 10px;
 }
 
 .h1 {
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 10px;
@@ -25,17 +30,21 @@
 .short-intro {
     font-size: 20px;
 }
+
+
 .container > * {
     flex-basis: 50px;
 }
 
 .social-icon {
     margin-top: 30px;
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    
 }
+
 
 
 .nav-item {
@@ -43,6 +52,7 @@
     font-weight: bold;
     margin: 8px;
 }
+
 
 .nav-link {
     color: #000;
@@ -67,4 +77,18 @@
 
 #theme-toggle {
     border: 0;
+}
+
+.footer-flex {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+
+footer {
+    font-size: 15px;
 }
