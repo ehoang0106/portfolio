@@ -22,7 +22,7 @@
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#"><img src="./logo.png" alt=""></a> -->
-            <a class="navbar-brand" href="#">KhoaHoang</a>
+            <a class="navbar-brand" href="#"><img src="./logo.png" alt="logo"></a>
             </button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About me</a>
@@ -51,27 +51,30 @@
 
 <body>
     <div class="flex-container">
-        <div class="avatar"><img src="./ava.jpg" alt="avatar"></div>
+        <div class="avatar"><img src="./ava.jfif" alt="avatar"></div>
         <div class="h1 greeting">Hi there! 👀</div>
         <div class="short-intro">
             Welcome to my website 🐧
         </div>
         <div class="social-icon">
-            <div class="icon">
+            <a href="#">
                 <svg width="50" height="50" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path
                         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                     </path>
                 </svg>
-            </div>
+            </a>
 
-            <svg width="50" height="50" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                    d="m68 138-8 16c-10.19-4.246-20.742-8.492-31.96-15.8-3.912-2.549-6.284-6.88-6.378-11.548-.488-23.964 5.134-48.056 19.369-73.528 1.863-3.334 4.967-5.778 8.567-7.056C58.186 43.02 64.016 40.664 74 39l6 11s6-2 16-2 16 2 16 2l6-11c9.984 1.664 15.814 4.02 24.402 7.068 3.6 1.278 6.704 3.722 8.567 7.056 14.235 25.472 19.857 49.564 19.37 73.528-.095 4.668-2.467 8.999-6.379 11.548-11.218 7.308-21.769 11.554-31.96 15.8l-8-16m-68-8s20 10 40 10 40-10 40-10" />
-                <ellipse cx="71" cy="101" fill="#000000" rx="13" ry="15" />
-                <ellipse cx="121" cy="101" fill="#000000" rx="13" ry="15" />
-            </svg>
+
+            <a href="#">
+                <svg width="50" height="50" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                        d="m68 138-8 16c-10.19-4.246-20.742-8.492-31.96-15.8-3.912-2.549-6.284-6.88-6.378-11.548-.488-23.964 5.134-48.056 19.369-73.528 1.863-3.334 4.967-5.778 8.567-7.056C58.186 43.02 64.016 40.664 74 39l6 11s6-2 16-2 16 2 16 2l6-11c9.984 1.664 15.814 4.02 24.402 7.068 3.6 1.278 6.704 3.722 8.567 7.056 14.235 25.472 19.857 49.564 19.37 73.528-.095 4.668-2.467 8.999-6.379 11.548-11.218 7.308-21.769 11.554-31.96 15.8l-8-16m-68-8s20 10 40 10 40-10 40-10" />
+                    <ellipse cx="71" cy="101" fill="#000000" rx="13" ry="15" />
+                    <ellipse cx="121" cy="101" fill="#000000" rx="13" ry="15" />
+                </svg>
+            </a>
 
             <a href="#">
                 <svg width="50" height="50" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -86,12 +89,20 @@
 </body>
 
 <footer class="py-3 my-4">
+
     <ul class="nav justify-content-sm-center border-bottom pb-1 mb-2">
 
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="mailto:contact@khoahoang.dev" target="_blank" class="nav-link px-2 text-body-secondary">Email</a></li>
+        <li class="nav-item"><a href="mailto:contact@khoahoang.dev" target="_blank"
+                class="nav-link px-2 text-body-secondary">Email</a></li>
     </ul>
     <p class="text-center text-body-secondary">© Khoa Hoang</p>
+    <span id="siteseal">
+        <script async type="text/javascript"
+            src="https://seal.godaddy.com/getSeal?sealID=9Y8jzSZHtH0p2m7QXl3b5TQPZMLioaljvrR5c2eMO4YqS2q6QWXRgr89aZwJ">
+        </script>
+    </span>
+
 </footer>
 
 </html>
