@@ -1,123 +1,243 @@
 body {
-    background-color: #CCEEBC;
     font-family: 'Quicksand', sans-serif;
 }
 
-.flex-container {
+/* Mobile version */
+
+@media screen and (max-width: 412px) {
+
+    
+    .container {
+        display: flex;
+        height: 110vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr 1fr 1fr; 
+        gap: 20px;
+        
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .profile {
+        background-color: #EAFFDA;
+        border-radius: 30px;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    .email {
+        font-size: 14px;
+        font-weight: bold;
+        color: #85b26fe4
+    }
+
+    .item > img {
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 2dvh;
+    }
+
+    .item > button {
+        background-color: #87a17ae4;
+        border-radius: 20px;
+        height: 40px;
+        width: 100px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .item > button:hover {
+        background-color: #85b26fe4;
+    }
+
+
+    .about-me {
+        background-color: #EAFFDA;
+        border-radius: 30px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 370px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .mini-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 1px;
+        color: #396822e4;
+    }
+
+    .status {
+        font-size: 15px;
+        color: #5AEB01;
+        font-weight: bold;
+    }
+
+    .skills {
+        background-color: #EAFFDA;
+        border-radius: 30px;
+
+    }
+
+}
+
+/* .flex-container {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-}
+} */
 
-.grid-container {
-    width: 100vh;
-    height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-    justify-content: center;
+
+/* PC version */
+
+@media screen and (min-width: 413px) {
+    .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
     
-}
-
-.item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Profile content */
-
-.profile {
+    .grid-container {
+        width: 80vh;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        justify-content: center;
+        
+    }
     
-    background-color: #EAFFDA;
-    border-radius: 30px;
-    grid-column: span 1;
-    grid-row: span 2;   
-}
-
-.name {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 2px;
-}
-
-.email {
-    font-size: 18px;
-    font-weight: bold;
-    color: #85b26fe4;
-}
-
-.item > img {
-    height: 300px;
-    border-radius: 50%;    
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     
-}
-
-.item > button {
-    background-color: #87a17ae4;
-    border-radius: 20px;
-    height: 40px;
-    width: 120px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.item > button:hover {
-    background-color: #85b26fe4;
-}
-
-
-
-/* About me content  */
-.about-me {
-    background-color: #EAFFDA;
-    border-radius: 30px;   
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 350px;
-    padding-left: 25px;
-    padding-right: 25px;
-
-}
-
-
-.mini-title {
-    margin-top: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #396822e4;
-}
-
-.status {
-    font-size: 15px;
-    color: #5AEB01;
-    font-weight: bold;
-    text-decoration: underline;
-
-}
-
-.skills {
-    background-color: #EAFFDA;
-    border-radius: 30px;
-    
+    }
     
 
+    
+    /* Profile content */
+    
+    .profile {
+        
+        background-color: #EAFFDA;
+        border-radius: 30px;
+        grid-column: span 1;
+        grid-row: span 2;   
+    }
+    
+    .name {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .email {
+        font-size: 18px;
+        font-weight: bold;
+        color: #85b26fe4;
+    }
+    
+    .item > img {
+        height: 160px;
+        border-radius: 50%;    
+        
+    }
+    
+    .item > button {
+        background-color: #87a17ae4;
+        border-radius: 20px;
+        height: 40px;
+        width: 120px;
+        border: 0;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .item > button:hover {
+        background-color: #85b26fe4;
+    }
+    
+    
+    
+    /* About me content  */
+    .about-me {
+        background-color: #EAFFDA;
+        border-radius: 30px;   
+        grid-column: span 1;
+        flex-shrink: 2;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 350px;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    
+    }
+    
+    
+    .mini-title {
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #396822e4;
+    }
+    
+    .status {
+        font-size: 15px;
+        color: #5AEB01;
+        font-weight: bold;
+        text-decoration: underline;
+    
+    }
+    
+    .skills {
+        background-color: #EAFFDA;
+        border-radius: 30px;
+        
+        
+    
+    }
+    
+    /* Item skills content */
+    
+    
+    
 }
-
-/* Item skills content */
-
-
 
