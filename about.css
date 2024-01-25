@@ -4,7 +4,7 @@ body {
 
 /* Mobile version */
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 600px) {
 
     
     .container {
@@ -116,7 +116,7 @@ body {
 
 /* PC version */
 
-@media screen and (min-width: 413px) {
+@media screen and (min-width: 601px) {
     .container {
         display: flex;
         height: 100vh;
