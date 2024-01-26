@@ -9,7 +9,7 @@ body {
     
     .container {
         display: flex;
-        height: 90vh;
+        height: 140vh;
         justify-content: center;
         align-items: center;
     }
@@ -99,6 +99,7 @@ body {
     .skills {
         background-color: #E1F0DA;
         border-radius: 30px;
+        height: 500px;
 
     }
 
