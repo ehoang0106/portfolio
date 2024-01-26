@@ -6,6 +6,9 @@ body {
 
 @media screen and (max-width: 600px) {
 
+    body {
+        background-color: #e3eddf;
+    }
     
     .container {
         display: flex;
@@ -30,7 +33,7 @@ body {
     }
     
     .profile {
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;
     }
 
@@ -70,7 +73,7 @@ body {
 
 
     .about-me {
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;
     }
 
@@ -97,7 +100,7 @@ body {
     }
 
     .skills {
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;
         height: 500px;
 
@@ -120,6 +123,11 @@ body {
 /* PC version */
 
 @media screen and (min-width: 601px) {
+
+    body {
+        background-color: #e3eddf;
+    }
+
     .container {
         display: flex;
         height: 100vh;
@@ -152,7 +160,7 @@ body {
     
     .profile {
         
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;
         grid-column: span 1;
         grid-row: span 2;   
@@ -196,7 +204,7 @@ body {
     
     /* About me content  */
     .about-me {
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;   
         grid-column: span 1;
         flex-shrink: 2;
@@ -231,7 +239,7 @@ body {
     }
     
     .skills {
-        background-color: #E1F0DA;
+        background-color: #FBF9F1;
         border-radius: 30px;
         
         
