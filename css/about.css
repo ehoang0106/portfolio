@@ -7,7 +7,7 @@ body {
 @media screen and (max-width: 600px) {
 
     body {
-        background-color: #e3eddf;
+        background-color: #eff1f3;
     }
     
     .container {
@@ -33,7 +33,7 @@ body {
     }
     
     .profile {
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;
     }
 
@@ -46,7 +46,7 @@ body {
     .email {
         font-size: 14px;
         font-weight: bold;
-        color: #85b26fe4
+        color: #4e4f4ee4
     }
 
     .item > img {
@@ -56,7 +56,7 @@ body {
     }
 
     .item > button {
-        background-color: #87a17ae4;
+        background-color: #5f655ce4;
         border-radius: 20px;
         height: 40px;
         width: 100px;
@@ -68,12 +68,12 @@ body {
     }
     
     .item > button:hover {
-        background-color: #85b26fe4;
+        background-color: #171816e4;
     }
 
 
     .about-me {
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;
     }
 
@@ -90,17 +90,17 @@ body {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 1px;
-        color: #396822e4;
+        color: #252628;
     }
 
     .status {
         font-size: 15px;
-        color: #5AEB01;
+        color: #5FD068;
         font-weight: bold;
     }
 
     .skills {
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;
         height: 500px;
 
@@ -125,7 +125,7 @@ body {
 @media screen and (min-width: 601px) {
 
     body {
-        background-color: #e3eddf;
+        background-color: #eff1f3;
     }
 
     .container {
@@ -160,7 +160,7 @@ body {
     
     .profile {
         
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;
         grid-column: span 1;
         grid-row: span 2;   
@@ -176,7 +176,7 @@ body {
     .email {
         font-size: 18px;
         font-weight: bold;
-        color: #85b26fe4;
+        color: #4e4f4ee4;
     }
     
     .item > img {
@@ -186,7 +186,7 @@ body {
     }
     
     .item > button {
-        background-color: #87a17ae4;
+        background-color: #5f655ce4;
         border-radius: 20px;
         height: 40px;
         width: 120px;
@@ -197,14 +197,14 @@ body {
     }
     
     .item > button:hover {
-        background-color: #85b26fe4;
+        background-color: #171816e4;
     }
     
     
     
     /* About me content  */
     .about-me {
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;   
         grid-column: span 1;
         flex-shrink: 2;
@@ -227,19 +227,19 @@ body {
         font-size: 25px;
         font-weight: bold;
         margin-bottom: 5px;
-        color: #396822e4;
+        color: #252628;
     }
     
     .status {
-        font-size: 15px;
-        color: #8ADAB2;
+        font-size: 16px;
+        color: #5FD068;
         font-weight: bold;
-        text-decoration: underline;
+        
     
     }
     
     .skills {
-        background-color: #FBF9F1;
+        background-color: #fff;
         border-radius: 30px;
         
         
