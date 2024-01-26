@@ -9,7 +9,7 @@ body {
     
     .container {
         display: flex;
-        height: 110vh;
+        height: 90vh;
         justify-content: center;
         align-items: center;
     }
@@ -30,7 +30,7 @@ body {
     }
     
     .profile {
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;
     }
 
@@ -70,7 +70,7 @@ body {
 
 
     .about-me {
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;
     }
 
@@ -97,7 +97,7 @@ body {
     }
 
     .skills {
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;
 
     }
@@ -113,6 +113,8 @@ body {
 
 } */
 
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
 
 /* PC version */
 
@@ -149,7 +151,7 @@ body {
     
     .profile {
         
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;
         grid-column: span 1;
         grid-row: span 2;   
@@ -193,7 +195,7 @@ body {
     
     /* About me content  */
     .about-me {
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;   
         grid-column: span 1;
         flex-shrink: 2;
@@ -221,14 +223,14 @@ body {
     
     .status {
         font-size: 15px;
-        color: #5AEB01;
+        color: #8ADAB2;
         font-weight: bold;
         text-decoration: underline;
     
     }
     
     .skills {
-        background-color: #EAFFDA;
+        background-color: #E1F0DA;
         border-radius: 30px;
         
         
