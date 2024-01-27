@@ -1,0 +1,34 @@
+name: Push code to khoahoang.dev
+
+#trigger when push code to master branch
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  Deploy-to-S3: #name of the job
+    runs-on: ubuntu-latest  #un on ubuntu latest server
+
+    steps:
+      # Configure AWS Credentials
+      - name: Configure AWS Credentials
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "us-east-1"
+        run: |
+          mkdir -p ~/.aws
+          echo "[default]" > ~/.aws/credentials
+          echo "aws_access_key_id=${AWS_ACCESS_KEY_ID}" >> ~/.aws/credentials
+          echo "aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" >> ~/.aws/credentials
+          echo "region=${AWS_DEFAULT_REGION}" >> ~/.aws/credentials
+
+      # Copy from github to runner -> # Clone the code to server
+      - name: Checkout file to runner
+        uses: actions/checkout@v4
+
+      # Copy Public to website bucket
+      - name: copy to s3
+        run: aws s3 cp ~/work/porfolio/ s3://www.khoahoang.dev --recursive
