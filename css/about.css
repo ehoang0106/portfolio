@@ -169,14 +169,15 @@ body {
     .name {
         font-size: 25px;
         font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 2px;
+        
+
     }
     
     .email {
         font-size: 18px;
         font-weight: bold;
         color: #4e4f4ee4;
+        margin-top: 5px;
     }
     
     .item > img {
@@ -194,6 +195,7 @@ body {
         color: white;
         font-weight: bold;
         font-size: 14px;
+        
     }
     
     .item > button:hover {
@@ -252,3 +254,13 @@ body {
     
 }
 
+.name {
+    margin-bottom: 10px;
+}
+.email {
+    margin-top: 10px;
+}
+
+.item > button {
+    margin-top: 20px;
+}
