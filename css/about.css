@@ -4,7 +4,7 @@ body {
 
 /* Mobile version */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 
     body {
         background-color: #eff1f3;
@@ -122,7 +122,7 @@ body {
 
 /* PC version */
 
-@media screen and (min-width: 601px) {
+@media only screen and (min-width: 751px) {
 
     body {
         background-color: #eff1f3;
