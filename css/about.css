@@ -126,7 +126,7 @@ body {
     
     .grid-container {
         width: 80vh;
-        height: 70vh;
+        height: 50vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -153,6 +153,7 @@ body {
         border-radius: 30px;
         grid-column: span 1;
         grid-row: span 2;   
+        
     }
     
     .name {
@@ -315,7 +316,7 @@ h3 {
 }
 
 h1 {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 5px;
