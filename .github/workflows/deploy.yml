@@ -33,4 +33,4 @@ jobs:
       - name: copy to s3
         run: | 
             pwd command
-            aws s3 cp ~/work/portfolio/portfolio s3://www.khoahoang.dev --recursive
+            aws s3 sync ~/work/portfolio/portfolio s3://www.khoahoang.dev --recursive
