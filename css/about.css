@@ -1,7 +1,9 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url(/pics/background-2.png);
-    background-repeat: no-repeat;
+    background: url(/pics/background-2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -14,7 +16,7 @@ body {
     
     .container {
         display: flex;
-        height: 140vh;
+        height: 100vh;
         justify-content: center;
         align-items: center;
     }
@@ -126,7 +128,6 @@ body {
     
     .grid-container {
         width: 80vh;
-        height: 50vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
