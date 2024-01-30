@@ -1,0 +1,58 @@
+body {
+    font-family: 'Honk', system-ui;
+    background: url(images/background-3.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 100px;
+
+}
+
+h3 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 45px;
+}
+
+img {
+    width: 50%;
+}
+.container {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.dice {
+    display: inline-block;
+    text-align: center;
+    margin: auto
+}
+
+button {
+    display: block;
+    width: 150px;
+    border: 0;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #9C060C;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'honk', sans-serif;
+    
+}
+
