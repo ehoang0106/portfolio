@@ -26,6 +26,8 @@ $(".btn").on("click", function() {
     var colorClicked = $(this).attr("id");
     guessedColors.push(colorClicked);
 
+
+    addSound(colorClicked);
     buttonAnimation(colorClicked);
     console.log(colorClicked);
 
@@ -71,6 +73,8 @@ function nextLevel() {
     answerColors.push(ranColor);
 
     promptAnimation(ranColor);
+    addSound(ranColor);
+    
     
 }
 
@@ -91,6 +95,7 @@ function answerCheck(level) {
         }
     }
     else {
+        addSound("wrong");
         $("body").addClass("wrong");
         $("#level-title").text("Oops, your memory is so bad!");
         // $("#score").text("Highest score: ");
@@ -105,3 +110,7 @@ function answerCheck(level) {
 }
 
 
+function addSound(sound) {
+    var audio = new Audio("/sounds/" + sound + ".mp3");
+    audio.play();
+}
