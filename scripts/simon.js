@@ -51,7 +51,7 @@ function promptAnimation(currentColor) {
 
     setTimeout(function() {
         $("#" + currentColor).removeClass("prompted");
-    }, 100);
+    }, 300);
 }
 
 function restartGame() {
