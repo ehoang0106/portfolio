@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+   
+
+}
+
+
+.grid-container {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    align-items: center;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    grid-row: span 2;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+}
+
+.experience {
+    width: 100%;
+    height: 100%;
+}
+
