@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .flex-container {
     display: flex;
     height: 100vh;
@@ -25,16 +29,56 @@
     justify-content: center;
     background-color: grey;
     align-items: center;
+    border-radius: 20px;
 }
+
+/* Profile */
 
 .profile {
     grid-row: span 2;
 }
 
+.profile img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.email {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4e4f4ee4;
+    margin-top: 20px;
+}
+
+.profile button {
+    background-color: #5f655ce4;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* Intro */
+
 .intro {
 
     
 }
+
+/* Experience */
 
 .experience {
     
