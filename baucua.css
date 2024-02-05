@@ -117,20 +117,21 @@ body {
         width: 500px;
         position: absolute;
     }
+
+    .alert-box {
+        display: none;
+        position: fixed;
+        top: 50px;
+        right: 30px;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+    }
 }
 
-.alert-box {
-    display: none;
-    position: fixed;
-    top: 50px;
-    right: 30px;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
-}
