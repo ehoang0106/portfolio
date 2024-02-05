@@ -1,0 +1,136 @@
+body {
+    background: url(image/bg.jfif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#bowl {
+    width: 420px;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+
+}
+
+#disk {
+    width: 400px;
+    position: absolute;
+}
+
+
+
+.cube-block {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 310px;
+    z-index: 5;
+}
+
+
+.cube-block img {
+    width: 100px;
+}
+
+
+.second-row {
+    display: block;
+    margin-left: 50px;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition-duration: 0.4s;
+
+}
+
+
+#shuffle {
+    background-color: #FF9800;
+}
+
+#open {
+    background-color: #65B741;
+}
+
+#close {
+    background-color: #B80000;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 750px) {
+    #bowl {
+        width: 320px;
+        position: relative;
+        bottom: 0;
+        z-index: 10;
+    
+    }
+    
+    #disk {
+        width: 300px;
+        position: absolute;
+    }
+}
+
+
+@media screen and (min-width: 751px) {
+    #bowl {
+        width: 420px;
+        position: relative;
+        bottom: 0;
+        z-index: 10;
+    
+    }
+    
+    #disk {
+        width: 500px;
+        position: absolute;
+    }
+}
+
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
