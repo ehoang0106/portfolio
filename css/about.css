@@ -197,7 +197,7 @@ body {
     
     /* About me content  */
     .about-me {
-     
+
         border-radius: 30px;   
         grid-column: span 1;
         flex-shrink: 2;
